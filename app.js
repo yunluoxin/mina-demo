@@ -1,7 +1,9 @@
 //app.js
+var test = require('utils/test.js')
 App({
   onLaunch: function () {
-
+    var d = new Date()
+    d.format('dddd')
   },
   getUserInfo:function(cb){
     var that = this

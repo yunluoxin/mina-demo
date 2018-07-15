@@ -2,6 +2,7 @@
 //获取应用实例
 var app = getApp()
 var utils = require('../../utils/ddutils.js')
+const StringUtils = require('../../utils/stringUtils.js')
 Page({
   data: {
 
@@ -38,5 +39,12 @@ Page({
 
   onLoad: function () {
     console.log('onLoad')
+    var  now = new Date()
+    now.format('teststestset')
+    var s ='3d'.parseInt()
+    console.info(s)
+
+    var result = StringUtils.isBlank('  ')
+    console.info('是否为空'+ result)
   }
 })
