@@ -68,7 +68,7 @@ function downloadAndSaveFiles(object) {
   var failed = false  // 标记已经出错过，不用再向上抛出异常
   var successTimes = 0;
   for (var index in urls) {
-    var url = urls[index]
+    const url = urls[index]
     downloadAndSaveFile({
       url: url,
       reload: reload,
